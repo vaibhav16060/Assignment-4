@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+
+    <TextView
+        style="@style/ToDoPageDetailTb"
+        android:id="@+id/rvi_title"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Hi"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        style="@style/ToDoPageDetailTb"
+        android:id="@+id/rvi_date"
+        android:text="Hello"
+        android:layout_below="@+id/rvi_title"
+        android:layout_marginTop="30dp"
+         />
+</RelativeLayout>

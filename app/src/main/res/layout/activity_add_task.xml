@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="vaibhav.iiitd.com.todolist.AddTask">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_top"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:background="@color/red"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_width="match_parent">
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Add Task"
+        android:textSize="40dp"
+        android:id="@+id/tv_add_task_banner"
+        android:layout_below="@id/toolbar_top"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Title : "
+        android:textSize="20dp"
+        android:id="@+id/tv_title"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/tv_add_task_banner"
+        android:layout_toLeftOf="@+id/tv_add_task_banner"
+        android:layout_toStartOf="@+id/tv_add_task_banner" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tb_title"
+        android:text=""
+        android:width="150dp"
+        android:layout_alignTop="@+id/tv_title"
+        android:layout_toRightOf="@+id/tv_title"
+        android:layout_marginLeft="50dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Detail : "
+        android:textSize="20dp"
+        android:id="@+id/tv_detail"
+        android:layout_marginTop="100dp"
+        android:layout_below="@+id/tv_add_task_banner"
+        android:layout_toLeftOf="@+id/tv_add_task_banner"
+        android:layout_toStartOf="@+id/tv_add_task_banner" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tb_detail"
+        android:maxLines="20"
+        android:lines="5"
+        android:text=""
+        android:width="150dp"
+        android:layout_alignTop="@+id/tv_detail"
+        android:layout_toRightOf="@+id/tv_detail"
+        android:layout_marginLeft="50dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/red"
+        android:textColor="#ffffff"
+        android:text="Add Task"
+        android:id="@+id/btn_add_task"
+        android:layout_below="@+id/tb_detail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+</RelativeLayout>
